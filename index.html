@@ -13,7 +13,7 @@
 <body>
     <header>
         <img src="./assets/logo.svg" />
-        <h1>
+        <h1 id="logotype">
             Guilherme Rodrigues
         </h1>
         <nav>
@@ -109,11 +109,47 @@
             <h1>
                 Saiba mais sobre mim
             </h1>
+            <p>
+                Me chamo Guilherme, tenho 24 anos, sou natural de Uberlândia-MG. Estou cursando Sistemas de Informação na Faculdade Uniessa.
+            </p>
         </section>
         <section id="contato">
             <h1>
                 Entre em contato
             </h1>
+           <form>
+            <input id="name" type="text" placeholder="Seu nome" />
+            <input id="email" type="text" placeholder="Seu e-mail" />
+            <textarea id="message">
+
+            </textarea>
+           </form>
+            <ul>
+                <li>
+                    <img src="./assets/gmail-logo.svg" height="30" />
+                    <span>
+                        Guilherme.rod12326@gmail.com
+                    </span>
+                </li>
+                <li>
+                    <img src="./assets/whatsapp-logo.svg" height="30" />
+                    <span>
+                        (34) 99697-1226
+                    </span>
+                </li>
+                <li>
+                    <img src="./assets/linkedin-logo.svg" height="30" />
+                    <span>
+                        Guilherme Rodrigues
+                    </span>
+                </li>
+                <li>
+                    <img src="./assets/instagram-logo.svg" height="30" />
+                    <span>
+                        @guilhermerod7
+                    </span>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
@@ -162,3 +198,27 @@
 </body>
 
 </html>
+
+<style>
+    * { 
+        box-sizing: border-box; 
+        scroll-behavior: smooth;
+    }
+    h1, h2, h3, p, li, a {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #logotype {
+        color: #553986;
+        font-size: 46px;
+    }
+    ul {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+        font-weight: 700;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
