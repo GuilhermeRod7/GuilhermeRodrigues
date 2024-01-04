@@ -1,22 +1,32 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Rubik+Glitch&display=swap');
+
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+:root {
+    --primary: #553986;
 }
 
 h1,
 h2,
-h3,
-p,
-li,
-a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h3 {
+    font-family: 'Rubik Glitch', system-ui;
+    color: var(--primary);
+}
+
+#logo {
+    width: 50px;
+    margin-right: 10px;
 }
 
 #logotype {
-    color: #553986;
-    font-size: 32px;
+    color: var(--primary);
+    font-size: 28px;
     font-weight: 700;
 }
 
@@ -24,10 +34,20 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 40px;
+    margin: 40px;
 }
 
-header > div {
+h1 {
+    font-size: 28px;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+header>div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,21 +66,48 @@ a:hover {
     text-decoration: underline;
 }
 
+header>nav>ul {
+    display: flex;
+    gap: 20px;
+}
+
 .techs {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
 }
 
-.techs > div {
-    background-color: aqua;
+#tecnologias {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 50px 0;
 }
 
-.techs > div > ul {
-    background-color: burlywood;
+.techs>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 180px;
+    height: 240px;
+}
+
+.techs>div>h2 {
+    display: block;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    min-height: 40px;
+    font-size: 22px;
+}
+
+.techs>div>ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -68,17 +115,26 @@ a:hover {
     width: 100%;
 }
 
-.techs > div > ul > li {
+.techs>div>ul>li {
     display: flex;
-    background-color: coral;
     align-items: center;
     width: 100%;
     margin: auto;
+    gap: 20px;
+}
+
+.techs>div>ul>li>span {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
+    background-color: white;
+    padding: 2px;
+    border-radius: 5px;
     object-fit: contain;
-    
+    aspect-ratio: 1/1;
+    height: 30px;
 }
