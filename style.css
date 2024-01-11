@@ -91,10 +91,10 @@ header>nav>ul {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    gap: 10px;
+    gap: 15px;
     background-color: var(--primary);
     color: white;
-    padding: 30px;
+    padding: 25px;
 }
 
 #sobre > h1 {
@@ -105,6 +105,22 @@ header>nav>ul {
     max-width: 340px;
     font-weight: 600;
     margin-bottom: 20px;
+}
+
+#contato {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    gap: 15px;
+}
+
+#contato > form {
+    font-weight: 600;
+    padding: 10px 10px;
+    background-color: var(--primary);
+    color: white;
 }
 
 .techs>div {
