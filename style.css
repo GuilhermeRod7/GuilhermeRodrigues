@@ -136,23 +136,30 @@ input, textarea {
     /* border: 1px solid var(--primary); */
 }
 
-input {
+input, button {
     padding: 8px 4px;
 }
 
-textarea {
-    padding: 8px 4px;
-    resize: none;
-    min-height: 150px;
-    white-space: normal;
-}
-
-textarea[placeholder] {
-    white-space: normal;
-}
-
-#contato > form > textarea {
+#message {
     grid-column: span 2;
+    min-height: 5rem;
+    padding-bottom: 45px;
+    word-break: break-all;
+}
+
+#contact-form > button {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 0.5rem;
+    grid-column: span 2;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#contact-form > button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 200ms;
 }
 
 .techs>div {
