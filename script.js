@@ -1,0 +1,1 @@
+const whatsappLink = "https://api.whatsapp.com/send?phone=5534996971226&text=Ol%C3%A1,%20vim%20pelo%20seu%20site"

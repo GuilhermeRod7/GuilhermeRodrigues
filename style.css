@@ -115,6 +115,10 @@ header>nav>ul {
     margin-top: 60px;
 }
 
+#contato > h1 {
+    margin-bottom: 25px;
+}
+
 #contato > form {
     font-weight: 600;
     display: grid;
@@ -213,4 +217,48 @@ input, button {
     object-fit: contain;
     aspect-ratio: 1/1;
     height: 30px;
+}
+
+#contato > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#contato > ul > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#contato > ul > li > a > img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+#contato > ul > li > a > span {
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    background-color: var(--primary);
+    color: white;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+footer > section, ul {
+    display: flex;
+    gap: 0 5px;
+}
+
+footer > section > h3, footer > h3 {
+    color: white;
+    font-size: 16px;
+}
+
+footer > section > ul > li > a {
+    font-size: 14px;
 }
