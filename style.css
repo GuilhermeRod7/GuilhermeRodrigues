@@ -112,7 +112,8 @@ header>nav>ul {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 60px;
+    max-width: 460px;
+    margin: 60px auto;
 }
 
 #contato > h1 {
@@ -257,6 +258,7 @@ footer > section, ul {
 footer > section > h3, footer > h3 {
     color: white;
     font-size: 16px;
+    padding-right: 10px;
 }
 
 footer > section > ul > li > a {
